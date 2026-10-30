@@ -1,10 +1,12 @@
 export default function ProblemSolution() {
-  const problems = [
-    "Inadequate or fragmented livestock records",
-    "Limited access to appropriate veterinary guidance",
-    "Difficulty maintaining reliable animal health and medication histories",
-    "Challenges connecting livestock farmers with trustworthy buyers",
-    "Need for responsible medication use, traceability, and consumer confidence",
+  const problems = [ 
+  "Inadequate or fragmented livestock records",
+  "Limited access to appropriate veterinary guidance",
+  "Difficulty maintaining reliable animal health and medication histories",
+  "Inappropriate antibiotic use and inadequate withdrawal-period management, increasing the risk of antibiotic residues in meat and other animal products",
+  "Antimicrobial resistance associated with inappropriate antimicrobial use in livestock, posing risks to animal and human health",
+  "Challenges connecting livestock farmers with trustworthy buyers",
+  "Need for responsible medication use, traceability, and consumer confidence",
   ];
 
   return (
@@ -42,27 +44,49 @@ export default function ProblemSolution() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-wide text-primary">Our Solution</p>
               <h2 className="mt-2 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                A connected approach to records, care, and trust
+                A connected approach to responsible livestock management
               </h2>
               <p className="mt-4 text-lg leading-8 text-muted-foreground">
-                Agropulse360 brings together organised livestock records, veterinary involvement, and
-                better connections between farmers and buyers in one connected digital product.
+                Agropulse360 brings together digital livestock records, veterinary collaboration, responsible medication management, and farmer-to-buyer connections in one platform. By improving how livestock health information is recorded, managed, and shared, we aim to promote more responsible farming practices, strengthen traceability, and build greater trust across Nigeria&apos;s livestock value chain.
               </p>
             </div>
             <div className="grid gap-4">
               {[
-                {
-                  title: "Better livestock records",
-                  description: "Keep livestock information organised and maintain consistent farm record keeping over time.",
-                },
-                {
-                  title: "More informed, veterinary-supported care",
-                  description: "Support animal health management with veterinary involvement and verifiable documentation where applicable.",
-                },
-                {
-                  title: "Greater trust and transparency",
-                  description: "Strengthen relationships across the value chain with clearer, more reliable information.",
-                },
+                  {
+                  title: "Centralised livestock records",
+                  description:
+                  "Provide farmers with a digital platform to organise livestock information, maintain individual animal records, and improve the consistency of farm record keeping.",
+                  },
+                  {
+                  title: "Stronger farmer–veterinarian collaboration",
+                  description:
+                  "Promote access to appropriate veterinary guidance and strengthen collaboration between farmers and qualified veterinary professionals in managing livestock health.",
+                  },
+                  {
+                  title: "Animal health and medication tracking",
+                  description:
+                  "Maintain documented animal health histories, treatment records, and medication information to support informed livestock management and continuity of care.",
+                  },
+                  {
+                  title: "Responsible antibiotic use and withdrawal-period tracking",
+                  description:
+                  "Support responsible medication practices by documenting antibiotic administration and relevant withdrawal periods, helping farmers and veterinary professionals monitor compliance before animals or animal products enter the food supply.",
+                  },
+                  {
+                  title: "Support for antimicrobial stewardship",
+                  description:
+                  "Encourage veterinary-guided antimicrobial use and better medication documentation to help address inappropriate antibiotic use and contribute to efforts to combat antimicrobial resistance.",
+                  },
+                  {
+                  title: "Farmer-to-buyer connections",
+                  description:
+                  "Connect livestock farmers with retailers and potential buyers, creating opportunities for more transparent sourcing and stronger commercial relationships.",
+                  },
+                  {
+                  title: "Veterinary verification and traceability",
+                  description:
+                  "Maintain relevant veterinary inspection and verification records to help buyers access reliable livestock information and make more informed sourcing decisions.",
+                  },
               ].map((item) => (
                 <div key={item.title} className="rounded-2xl border border-border bg-white p-6 shadow-sm">
                   <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
